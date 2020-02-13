@@ -81,7 +81,7 @@ namespace SimpleTCP
                 TcpClient tcpClient = new TcpClient();
                 var endpoint = new IPEndPoint(ReadIP(), ReadPort());
                 tcpClient.Connect(endpoint);
-                Console.WriteLine("Connected to {0}", endpoint);
+                Console.WriteLine("Connected to " + endpoint);
                 ProcessClient(tcpClient);
             }
 
